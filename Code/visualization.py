@@ -75,7 +75,7 @@ plt.figure(figsize=(16,10))
 x = [1,2,3]
 y = [1,1,4]
 #sns.scatterplot(x=x,y=y,hue=[2,2,3],alpha=0.3)
-path = '/Users/songhewang/Downloads/Armor_acmmm2021/Music/Code/features.npy'
+path = 'features.npy'
 features = np.load(open(path,'rb'))
 features_norm = features / np.sum(features,axis=0)
 #pca_result = pca.fit_transform(features_norm)
